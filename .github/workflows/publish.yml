@@ -24,7 +24,7 @@ jobs:
         with:
           registry: ghcr.io
           username: riccardofioretti
-          password: secret.Riccardo
+          password: ${{secrets.RICCARDO}}
       - name: Build container
         uses: docker/build-push-action@v5
         with:
